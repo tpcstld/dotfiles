@@ -1,0 +1,8 @@
+set nocursorline " don't highlight current line
+
+" keyboard shortcuts
+" inoremap jk <ESC>
+
+" highlight search
+set hlsearch
+nmap <leader>hl :let @/ = ""<CR>
