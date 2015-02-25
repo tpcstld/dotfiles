@@ -1,8 +1,30 @@
+" vimrc not from maximum awesome, but not os specific
+" ===========================================================================
 set nocursorline " don't highlight current line
+set autochdir " Working directory is the same as file directory
 
-" keyboard shortcuts
-" inoremap jk <ESC>
+" GUI settings
+set background=dark
+set t_Co=256
+colorscheme solarized
 
 " highlight search
 set hlsearch
 nmap <leader>hl :let @/ = ""<CR>
+
+" Fix tabbing
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+"============================================================================
+" OS specific vimrc
+
+" keyboard shortcuts
+" inoremap jk <ESC>
+
+" gui settings
+set guioptions-=T  "remove toolbar
+set guifont=Ubuntu\ Mono\ 13
+
+" Pdflatex shortcut
+nmap <leader>r :w<CR>:!pdflatex %<CR><CR>
