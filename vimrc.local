@@ -24,7 +24,9 @@ set softtabstop=4
 
 " gui settings
 set guioptions-=T  "remove toolbar
-set guifont=Ubuntu\ Mono\ 13
+set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
+let g:airline_powerline_fonts=1
+
 
 " Pdflatex shortcut
 nmap <leader>r :w<CR>:!pdflatex %<CR><CR>
