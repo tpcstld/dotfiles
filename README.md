@@ -6,6 +6,7 @@ Personal Dotfiles
 2. Install ZShell
 3. Copy the maximum-awesome repo's bundles
 4. Run `:PluginInstall` in Vim
+5. Install solarized color scheme
 
 ## Tools
 * zsh
