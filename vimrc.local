@@ -3,6 +3,9 @@
 set nocursorline " don't highlight current line
 set autochdir " Working directory is the same as file directory
 
+" 80 Character line
+set colorcolumn=80
+
 " GUI settings
 set background=dark
 set t_Co=256
