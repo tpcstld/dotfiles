@@ -1,6 +1,9 @@
 # dotfiles
 Personal Dotfiles
 
+## About
+This contains my dotfiles and productivity software links.
+
 ## Installation
 1. Install Vim and Vundle
 2. Install ZShell
