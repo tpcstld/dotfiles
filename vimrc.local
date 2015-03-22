@@ -1,10 +1,18 @@
 " vimrc not from maximum awesome, but not os specific
 " ===========================================================================
+
+" UI options
 set nocursorline " don't highlight current line
+set lazyredraw " lazily redraw vim
+
+" Movement options
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
+
 set autochdir " Working directory is the same as file directory
 
-" 80 Character line
-set colorcolumn=80
+set colorcolumn=80 " 80 character line
 
 " GUI settings
 set background=dark
@@ -19,6 +27,7 @@ nmap <leader>hl :let @/ = ""<CR>
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+
 "============================================================================
 " OS specific vimrc
 
