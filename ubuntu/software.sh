@@ -3,7 +3,7 @@
 # Mutate
 sudo add-apt-repository ppa:mutate/ppa
 sudo apt-get update
-sudo apt-get install mutate
+sudo apt-get install -y mutate
 
 # Preload
 sudo apt-get install -y preload
