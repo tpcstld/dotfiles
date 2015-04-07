@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo apt-get install preload
+sudo apt-get install -y preload
