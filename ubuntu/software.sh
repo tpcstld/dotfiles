@@ -14,5 +14,5 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 
 # Terminator and solarized colors for Terminator
 sudo apt-get install -y terminator
-curl https://raw.githubusercontent.com/ghuntley/terminator-solarized/master/config > temp.txt
+curl https://raw.githubusercontent.com/tpcstld/dotfiles/master/ubuntu/terminator_config > temp.txt
 mv temp.txt ~/.config/terminator/config
