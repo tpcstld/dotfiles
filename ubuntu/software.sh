@@ -16,3 +16,7 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 sudo apt-get install -y terminator
 curl https://raw.githubusercontent.com/tpcstld/dotfiles/master/ubuntu/terminator_config > temp.txt
 mv temp.txt ~/.config/terminator/config
+
+# Autojump
+sudo apt-get install -y autojump
+echo "source /usr/share/autojump/autojump.sh" >> ~/.bash_profile
