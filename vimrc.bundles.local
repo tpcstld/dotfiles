@@ -1,3 +1,4 @@
 Plugin 'derekwyatt/vim-scala'
 Plugin 'bling/vim-airline'
 Plugin 'ervandew/supertab'
+Plugin 'Lokaltog/vim-easymotion'
