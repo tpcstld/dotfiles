@@ -1,0 +1,6 @@
+# Graphical ivm
+alias vim='gvim 2>/dev/null' # Discard errors
+# http://askubuntu.com/questions/361180/gvim-glib-gobject-warning-in-ubuntu-13-10
+
+# Mac 'open' command
+alias open='xdg-open'
