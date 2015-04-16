@@ -20,3 +20,5 @@ mv temp.txt ~/.config/terminator/config
 # Autojump
 sudo apt-get install -y autojump
 echo "source /usr/share/autojump/autojump.sh" >> ~/.bash_profile
+
+source ~/.bash_profile
