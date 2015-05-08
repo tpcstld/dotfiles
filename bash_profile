@@ -1,5 +1,5 @@
 # graphical vim
-# alias vim='gvim'
+alias vim='gvim'
 # ls aliases
 alias ls='ls -l --color'
 alias dir='ls -l --color'
