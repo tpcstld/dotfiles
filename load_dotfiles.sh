@@ -4,3 +4,4 @@ cp vimrc.bundles ~/.vimrc.bundles
 cp vimrc.bundles.local ~/.vimrc.bundles.local
 cp bash_profile ~/.bash_profile
 cp gitconfig ~/.gitconfig
+cp tmux.conf ~/.tmux.conf
