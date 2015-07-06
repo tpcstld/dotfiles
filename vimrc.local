@@ -47,3 +47,5 @@ let g:syntastic_javascript_checkers = ['jsxhint']
 
 " Paste to system keyboard
 set clipboard=unnamedplus
+
+:setlocal spell spelllang=en_ca

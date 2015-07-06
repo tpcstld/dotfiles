@@ -14,3 +14,8 @@ alias gd='git diff'
 
 # A vim command for the terminal
 alias :q='exit'
+
+# Autojump
+. /usr/share/autojump/autojump.sh
+
+alias open='xdg-open'
