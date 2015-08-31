@@ -14,6 +14,7 @@ This contains my dotfiles and productivity software links.
 ## Tools
 * zsh
 * maximum-awesome
+* autojump
 
 ## Vim stuff
 * Vundle
