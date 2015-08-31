@@ -15,3 +15,6 @@ ubuntu:
 zsh:
 	sh -c "$$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	echo "source ~/.bash_profile" >> ~/.zshrc
+
+autojump:
+	sudo apt-get install autojump
