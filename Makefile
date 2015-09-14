@@ -17,4 +17,13 @@ zsh:
 	echo "source ~/.bash_profile" >> ~/.zshrc
 
 autojump:
-	sudo apt-get install autojump
+	sudo apt-get install -y autojump
+	echo "source /usr/share/autojump/autojump.sh" >> ~/.bash_profile
+
+mutate:
+	sudo add-apt-repository ppa:mutate/ppa
+	sudo apt-get update
+	sudo apt-get install -y mutate
+
+ag:
+	sudo apt-get install -y silversearcher-ag
