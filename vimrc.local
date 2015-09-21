@@ -28,6 +28,12 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
+" Don't wait for <ESC> shortcuts
+set timeoutlen=1000 ttimeoutlen=0
+
+" English spellcheck
+setlocal spell spelllang=en_ca
+
 "============================================================================
 " OS specific vimrc -- Ubuntu
 
@@ -51,5 +57,3 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
 " Paste to system keyboard
 set clipboard=unnamedplus
-
-:setlocal spell spelllang=en_ca
