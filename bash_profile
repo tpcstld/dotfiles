@@ -19,3 +19,6 @@ alias :q='exit'
 . /usr/share/autojump/autojump.sh
 
 alias open='xdg-open'
+
+# Custom, computer specific settings
+source ~/.bash_profile.local
