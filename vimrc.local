@@ -34,6 +34,8 @@ setlocal spell spelllang=en_ca " English spellcheck
 
 set noshowmode " Don't show the -- NORMAL -- status text, since we have Airline
 
+set tags=tags;/ " Keep crawling up directories to find tags
+
 "============================================================================
 " OS specific vimrc -- Ubuntu
 
@@ -51,7 +53,7 @@ nmap <leader>r :w<CR>:!pdflatex %<CR><CR>
 " JSXHint
 let g:syntastic_javascript_checkers = ['jsxhint']
 
-" C++11
+" C++11 linting
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
