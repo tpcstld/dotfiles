@@ -1,6 +1,5 @@
 " vimrc not from maximum awesome, but not os specific
 " ===========================================================================
-
 " UI options
 set nocursorline " don't highlight current line
 set lazyredraw " lazily redraw vim
@@ -29,11 +28,11 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
-" Don't wait for <ESC> shortcuts
-set timeoutlen=1000 ttimeoutlen=0
+set timeoutlen=1000 ttimeoutlen=0 " Don't wait for <ESC> shortcuts
 
-" English spellcheck
-setlocal spell spelllang=en_ca
+setlocal spell spelllang=en_ca " English spellcheck
+
+set noshowmode " Don't show the -- NORMAL -- status text, since we have Airline
 
 "============================================================================
 " OS specific vimrc -- Ubuntu
