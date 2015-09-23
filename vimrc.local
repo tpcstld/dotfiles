@@ -4,6 +4,7 @@
 " UI options
 set nocursorline " don't highlight current line
 set lazyredraw " lazily redraw vim
+set ttyfast " Fast terminal, more characters sent to terminal
 
 " Movement options
 " move vertically by visual line
