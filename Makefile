@@ -27,3 +27,6 @@ mutate:
 
 ag:
 	sudo apt-get install -y silversearcher-ag
+
+load:
+	./load_dotfiles.sh
