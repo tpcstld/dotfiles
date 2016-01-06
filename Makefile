@@ -1,16 +1,20 @@
-all:
-	# Install custom vim plugins
-	mkdir -p ~/.vim && cp -r vim/* ~/.vim
+.PHONY: all load_dotfiles vim zsh autojump
+
+all: load_dotfiles vim zsh ag
+
+# Load the dotfiles
+load_dotfiles:
 	./load_dotfiles.sh
-	vim +PluginInstall +qall
-	source ~/.bash_profile
 
-vundle:
-	# Install vundle
+# Install custom vim plugins
+vim:
+	mkdir -p ~/.vim && cp -r vim/* ~/.vim
+	# Install vundle and it's addons
 	git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle/Vundle.vim
-
-ubuntu:
-	ubuntu/install_software.sh
+	vim +PluginInstall +qall
+	# Install YCM compiled part
+	sudo apt-get install -y build-essential cmake python-dev
+	~/.vim/bundle/YouCompleteMe/install.py --clang-completer
 
 zsh:
 	sh -c "$$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -28,5 +32,5 @@ mutate:
 ag:
 	sudo apt-get install -y silversearcher-ag
 
-load:
-	./load_dotfiles.sh
+ubuntu:
+	ubuntu/install_software.sh
