@@ -1,6 +1,6 @@
 all:
 	# Install custom vim plugins
-	cp -r vim/* ~/.vim/
+	mkdir -p ~/.vim && cp -r vim/* ~/.vim
 	./load_dotfiles.sh
 	vim +PluginInstall +qall
 	source ~/.bash_profile
