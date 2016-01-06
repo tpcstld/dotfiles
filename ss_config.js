@@ -6,3 +6,4 @@ term_.prefs_.set('color-palette-overrides', {"0":"#073642","1":"#dc322f","2":"#8
 term_.prefs_.set('background-color', '#002b36');
 term_.prefs_.set('cursor-color', '#eee8d5');
 term_.prefs_.set('foreground-color', '#eee8d5');
+term_.prefs_.set('font-family', '"ubuntu", monospace');
