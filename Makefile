@@ -1,4 +1,4 @@
-.PHONY: all load_dotfiles vim zsh autojump
+.PHONY: all load_dotfiles vim zsh autojump ag
 
 all: load_dotfiles vim zsh ag
 
