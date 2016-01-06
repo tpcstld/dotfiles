@@ -7,3 +7,4 @@ term_.prefs_.set('background-color', '#002b36');
 term_.prefs_.set('cursor-color', '#eee8d5');
 term_.prefs_.set('foreground-color', '#eee8d5');
 term_.prefs_.set('font-family', '"ubuntu mono", monospace ');
+term_.prefs_.set('font-size', 16);
