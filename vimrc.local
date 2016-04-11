@@ -5,8 +5,7 @@ set nocursorline " don't highlight current line
 set lazyredraw " lazily redraw vim
 set ttyfast " Fast terminal, more characters sent to terminal
 
-" Movement options
-" move vertically by visual line
+" Move vertically by visual line
 nnoremap j gj
 nnoremap k gk
 
@@ -15,7 +14,7 @@ set autochdir " Working directory is the same as file directory
 set colorcolumn=80 " 80 character line
 
 " GUI settings
-set background=dark
+set background=light
 set t_Co=256
 colorscheme solarized
 
@@ -24,9 +23,9 @@ set hlsearch
 nmap <leader>hl :let @/ = ""<CR>
 
 " Fix tabbing
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 set timeoutlen=1000 ttimeoutlen=0 " Don't wait for <ESC> shortcuts
 
@@ -57,26 +56,9 @@ command! Wq :wq
 command! WQ :wq
 command! Q :q
 
-"============================================================================
-" OS specific vimrc -- Ubuntu
-
-" keyboard shortcuts
-" inoremap jk <ESC>
-
-" gui settings
-set guioptions-=T  "remove toolbar
-set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
-let g:airline_powerline_fonts=1
-
-" Pdflatex shortcut
-nmap <leader>r :w<CR>:!pdflatex %<CR><CR>
-
-" JSXHint
-let g:syntastic_javascript_checkers = ['jsxhint']
-
 " C++11 linting
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
-" Paste to system keyboard
-set clipboard=unnamedplus
+source ~/.vimrc.which
+source ~/.vimrc.local.local

@@ -1,5 +1,5 @@
 " OS specific vimrc settings -- Ubuntu
-"
+
 " GUI settings
 set guioptions-=T  "remove toolbar
 set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
