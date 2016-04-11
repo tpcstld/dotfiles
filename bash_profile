@@ -1,5 +1,3 @@
-# graphical vim
-# alias vim='gvim'
 # ls aliases
 alias ls='ls -l --color'
 alias dir='ls -l --color'
@@ -14,6 +12,7 @@ alias gd='git diff'
 
 # A vim command for the terminal
 alias :q='exit'
+alias :Q='exit'
 
 # Override the open command to make it behave like OSX.
 alias open='xdg-open'
