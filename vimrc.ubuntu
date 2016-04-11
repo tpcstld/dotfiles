@@ -1,0 +1,11 @@
+" OS specific vimrc settings -- Ubuntu
+"
+" GUI settings
+set guioptions-=T  "remove toolbar
+set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
+let g:airline_powerline_fonts=1
+
+" Paste to system clipboard
+set clipboard=unnamedplus
+
+source ~/.vimrc.local.local

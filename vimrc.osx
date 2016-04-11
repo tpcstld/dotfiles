@@ -1,0 +1,4 @@
+" OS specific vimrc settings -- OSX
+
+" Paste to system clipboard
+set clipboard=unnamed
