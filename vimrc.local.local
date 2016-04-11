@@ -1,0 +1,12 @@
+" Eclim and YCM
+let g:EclimCompletionMethod = 'omnifunc'
+
+" ClangFormat
+nmap <leader>c :ClangFormat<CR>
+vmap <leader>c :ClangFormat<CR>
+
+" Required by YCM.
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+
+" Eclim: Java dependencies.
+nmap <leader>j :JavaImport<CR>
