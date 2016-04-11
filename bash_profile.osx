@@ -1,0 +1,3 @@
+# ls aliases
+alias ls='ls -l'
+alias dir='ls -l'

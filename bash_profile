@@ -1,9 +1,4 @@
-# ls aliases
-alias ls='ls -l --color'
-alias dir='ls -l --color'
-
 # Git aliases
-
 alias gs='git status'
 alias gaa='git add --all :/'
 alias gcaa='git commit --amend -a'
@@ -14,11 +9,9 @@ alias gd='git diff'
 alias :q='exit'
 alias :Q='exit'
 
-# Override the open command to make it behave like OSX.
-alias open='xdg-open'
-
 # We want the SVN commit editor to be vim.
 export SVN_EDITOR=vim
 
 # Custom, computer specific settings
+source ~/.bash_profile.which
 source ~/.bash_profile.local

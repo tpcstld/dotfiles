@@ -1,0 +1,6 @@
+# ls aliases
+alias ls='ls -l --color'
+alias dir='ls -l --color'
+
+# Override the open command to make it behave like OSX.
+alias open='xdg-open'
