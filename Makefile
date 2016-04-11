@@ -1,10 +1,6 @@
 .PHONY: all load_dotfiles vim zsh autojump ag
 
-all: load_dotfiles vim zsh ag
-
-# Load the dotfiles
-load_dotfiles:
-	./load_dotfiles.sh
+all: vim zsh ag
 
 # Install custom vim plugins
 vim:
@@ -14,7 +10,7 @@ vim:
 	vim +PluginInstall +qall
 	# Install YCM compiled part
 	sudo apt-get install -y build-essential cmake python-dev
-	~/.vim/bundle/YouCompleteMe/install.py --clang-completer
+	~/.vim/bundle/YouCompleteMe/install.py --clang-completer --tern-completer
 
 zsh:
 	sh -c "$$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
