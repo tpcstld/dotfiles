@@ -1,0 +1,2 @@
+# Fix clipboard/open issue
+set -g default-command "reattach-to-user-namespace -l ${SHELL}"
