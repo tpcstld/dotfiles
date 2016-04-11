@@ -46,6 +46,17 @@ set tags=tags;/ " Keep crawling up directories to find tags
 " Don't overwrite paste when pasting in visual mode
 xnoremap p pgvy
 
+" Syntastic Scala checker is slow
+let g:syntastic_mode_map = { "mode": "active",
+                           \ "active_filetypes": [],
+                           \ "passive_filetypes": ["scala"] }
+
+" Map capital versions of save and quit commands to the real commands.
+command! W :w
+command! Wq :wq
+command! WQ :wq
+command! Q :q
+
 "============================================================================
 " OS specific vimrc -- Ubuntu
 
