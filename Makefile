@@ -1,11 +1,14 @@
-.PHONY: all load_dotfiles vim zsh autojump ag
+.PHONY: all dotfiles vim zsh autojump ag
 
-all: vim zsh ag
+all: dotfiles vim zsh ag
+
+dotfiles:
+	./setup_dotfiles.sh
 
 # Install custom vim plugins
 vim:
 	mkdir -p ~/.vim && cp -r vim/* ~/.vim
-	# Install vundle and it's addons
+	# Install vundle and its addons
 	git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle/Vundle.vim
 	vim +PluginInstall +qall
 	# Install YCM compiled part
