@@ -76,5 +76,7 @@ endfunction
 command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
 silent! autocmd VimEnter * RemoveConflictingAlignMaps
 
+let g:airline_powerline_fonts = 1
+
 source ~/.vimrc.which
 source ~/.vimrc.local.local
