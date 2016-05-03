@@ -11,6 +11,7 @@ ln -s $(pwd)/gitconfig ~/.gitconfig
 ln -s $(pwd)/gitignore ~/.gitignore
 ln -s $(pwd)/tmux.conf ~/.tmux.conf
 ln -s $(pwd)/tmux.conf.osx ~/.tmux.conf.osx
+ln -s $(pwd)/vimrc.bundles ~/.vimrc.bundles
 ln -s $(pwd)/vimrc.bundles.local ~/.vimrc.bundles.local
 ln -s $(pwd)/vimrc.local ~/.vimrc.local
 ln -s $(pwd)/vimrc.osx ~/.vimrc.osx
