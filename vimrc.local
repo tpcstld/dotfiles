@@ -14,7 +14,7 @@ set autochdir " Working directory is the same as file directory
 set colorcolumn=80 " 80 character line
 
 " GUI settings
-set background=light
+set background=dark
 set t_Co=256
 colorscheme solarized
 
@@ -48,7 +48,7 @@ xnoremap p pgvy
 " Syntastic Scala checker is slow
 let g:syntastic_mode_map = { "mode": "active",
                            \ "active_filetypes": [],
-                           \ "passive_filetypes": ["scala"] }
+                           \ "passive_filetypes": ["scala", "java"] }
 
 " Map capital versions of save and quit commands to the real commands.
 command! W :w
