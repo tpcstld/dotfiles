@@ -1,6 +1,6 @@
-.PHONY: all dotfiles vim zsh autojump ag
+.PHONY: all dotfiles vim zsh
 
-all: dotfiles vim zsh ag
+all: dotfiles vim zsh
 
 dotfiles:
 	./setup_dotfiles.sh
@@ -18,18 +18,3 @@ vim:
 zsh:
 	sh -c "$$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	echo "source ~/.bash_profile" >> ~/.zshrc
-
-autojump:
-	sudo apt-get install -y autojump
-	echo "source /usr/share/autojump/autojump.sh" >> ~/.bash_profile
-
-mutate:
-	sudo add-apt-repository ppa:mutate/ppa
-	sudo apt-get update
-	sudo apt-get install -y mutate
-
-ag:
-	sudo apt-get install -y silversearcher-ag
-
-ubuntu:
-	ubuntu/install_software.sh

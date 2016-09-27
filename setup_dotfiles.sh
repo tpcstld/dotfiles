@@ -1,6 +1,8 @@
+#!/bin/bash
+
 # TODO: Fix for all OSes.
 
-# set -e
+set -e
 
 cd "$(dirname "$0")"
 
