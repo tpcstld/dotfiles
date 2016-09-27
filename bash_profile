@@ -12,6 +12,9 @@ alias :Q='exit'
 # We want the SVN commit editor to be vim.
 export SVN_EDITOR=vim
 
+# Disable auto-titling to preserve tmux window names.
+export DISABLE_AUTO_TITLE="true"
+
 # Custom, computer specific settings
 source ~/.bash_profile.which
 source ~/.bash_profile.local
