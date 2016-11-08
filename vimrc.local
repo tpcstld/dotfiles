@@ -2,7 +2,6 @@
 " ===========================================================================
 " UI options
 set nocursorline " don't highlight current line
-set lazyredraw " lazily redraw vim
 set ttyfast " Fast terminal, more characters sent to terminal
 
 " Move vertically by visual line
@@ -59,6 +58,9 @@ command! Q :q
 " C++11 linting
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
+
+" Disable Ex mode
+:nnoremap Q <Nop>
 
 " Disambiguate ,a & ,t from the Align plugin, making them fast again.
 "
