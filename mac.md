@@ -2,5 +2,6 @@
 
 * Homebrew
 * BetterTouchTool
+* Spectacle
 * Maximum Awesome
 * Scroll Reverser
