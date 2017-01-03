@@ -5,3 +5,4 @@
 * Spectacle
 * Maximum Awesome
 * Scroll Reverser
+* Alfred
