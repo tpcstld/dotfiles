@@ -1,24 +1,8 @@
 #!/bin/sh
 
-# Mutate
-sudo add-apt-repository ppa:mutate/ppa
-sudo apt-get update
-sudo apt-get install -y mutate
-
-# Preload
-sudo apt-get install -y preload
-
-# Z-shell + oh-my-zsh
-sudo apt-get install -y zsh
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-
-# Terminator and solarized colors for Terminator
-sudo apt-get install -y terminator
-curl https://raw.githubusercontent.com/tpcstld/dotfiles/master/ubuntu/terminator_config > temp.txt
-mv temp.txt ~/.config/terminator/config
+# Xclip, for clipboard access in tmux.
+sudo apt install xclip
 
 # Autojump
-sudo apt-get install -y autojump
+sudo apt install autojump
 echo "source /usr/share/autojump/autojump.sh" >> ~/.bash_profile
-
-source ~/.bash_profile
