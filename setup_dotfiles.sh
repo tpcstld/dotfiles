@@ -2,7 +2,7 @@
 
 # TODO: Fix for all OSes.
 
-set -e
+# set -e
 
 cd "$(dirname "$0")"
 
@@ -14,6 +14,7 @@ ln -s $(pwd)/gitignore ~/.gitignore
 ln -s $(pwd)/tmux.conf ~/.tmux.conf
 ln -s $(pwd)/tmux.conf.osx ~/.tmux.conf.osx
 ln -s $(pwd)/tmux.conf.ubuntu ~/.tmux.conf.ubuntu
+ln -s $(pwd)/vimrc ~/.vimrc
 ln -s $(pwd)/vimrc.bundles ~/.vimrc.bundles
 ln -s $(pwd)/vimrc.bundles.local ~/.vimrc.bundles.local
 ln -s $(pwd)/vimrc.local ~/.vimrc.local
