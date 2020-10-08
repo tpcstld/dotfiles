@@ -1,0 +1,6 @@
+{
+  "eslint.autoFixOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "typescriptreact"],
+  "css.validate": false,
+  "python.linting.mypyEnabled": true
+}

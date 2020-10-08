@@ -21,6 +21,7 @@ ln -s $(pwd)/vimrc.osx ~/.vimrc.osx
 ln -s $(pwd)/vimrc.ubuntu ~/.vimrc.ubuntu
 ln -s $(pwd)/tern-project ~/.tern-project
 ln -s $(pwd)/ycm_extra_conf.py ~/.ycm_extra_conf.py
+ln -s $(pwd)/vim/coc-settings.json ~/.vim/coc-settings.json
 
 echo "source ~/.vimrc.osx" > ~/.vimrc.which
 echo "source-file ~/.tmux.conf.osx" > ~/.tmux.conf.which
