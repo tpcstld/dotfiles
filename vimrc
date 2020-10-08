@@ -1,19 +1,12 @@
-" don't bother with vi compatibility
+" Don't bother with vi compatibility
 set nocompatible
 
 " enable syntax highlighting
 syntax enable
 
-" configure Vundle
-filetype on " without this vim emits a zero exit status, later, because of :ft off
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
-
-" install Vundle bundles
+" Install Plugins.
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
-  source ~/.vimrc.bundles.local
 endif
 
 " whitespace trimmer
@@ -63,11 +56,14 @@ map <leader>l :Align
 nmap <leader>a :Ag 
 nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>d :NERDTreeToggle<CR>
-nmap <leader>f :NERDTreeFind<CR>
-nmap <leader>t :CtrlP<CR>
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>r :NERDTreeFind<CR>
+nmap <leader>t :GFiles<CR>
 nmap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nmap <leader>] :TagbarToggle<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
+nmap <leader>gd :YcmCompleter GoToDefinition<CR>
 nmap <leader>g :GitGutterToggle<CR>
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
@@ -109,6 +105,28 @@ else
   let &t_SI = "\<Esc>]50;CursorShape=1\x7"
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
+
+" Map capital versions of save and quit commands to the real commands.
+command! W :w
+command! Wq :wq
+command! WQ :wq
+command! Q :q
+
+" highlight search
+set hlsearch
+nmap <leader>hl :let @/ = ""<CR>
+
+
+" Enter counts as accept in SuperTab.
+let g:SuperTabDefaultCompletionType = "<c-n>"
+inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
+
+" Faster syntax highlighting.
+syntax sync minlines=256
+
+" Better split settings.
+set splitright
+set splitbelow
 
 " Go crazy!
 if filereadable(expand("~/.vimrc.local"))

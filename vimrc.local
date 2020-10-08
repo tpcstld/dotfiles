@@ -8,7 +8,7 @@ set ttyfast " Fast terminal, more characters sent to terminal
 nnoremap j gj
 nnoremap k gk
 
-set autochdir " Working directory is the same as file directory
+" set autochdir " Working directory is the same as file directory
 
 set colorcolumn=80 " 80 character line
 
@@ -16,10 +16,6 @@ set colorcolumn=80 " 80 character line
 set background=dark
 set t_Co=256
 colorscheme solarized
-
-" highlight search
-set hlsearch
-nmap <leader>hl :let @/ = ""<CR>
 
 " Fix tabbing
 set tabstop=2
@@ -48,12 +44,6 @@ xnoremap p pgvy
 let g:syntastic_mode_map = { "mode": "active",
                            \ "active_filetypes": [],
                            \ "passive_filetypes": ["scala", "java"] }
-
-" Map capital versions of save and quit commands to the real commands.
-command! W :w
-command! Wq :wq
-command! WQ :wq
-command! Q :q
 
 " C++11 linting
 let g:syntastic_cpp_compiler = 'g++'
