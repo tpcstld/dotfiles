@@ -23,6 +23,6 @@ ln -s $(pwd)/tern-project ~/.tern-project
 ln -s $(pwd)/ycm_extra_conf.py ~/.ycm_extra_conf.py
 ln -s $(pwd)/vim/coc-settings.json ~/.vim/coc-settings.json
 
-echo "source ~/.vimrc.osx" > ~/.vimrc.which
-echo "source-file ~/.tmux.conf.osx" > ~/.tmux.conf.which
-echo "source ~/.bash_profile.osx" > ~/.bash_profile.which
+echo "source ~/.vimrc.ubuntu" > ~/.vimrc.which
+echo "source-file ~/.tmux.conf.ubuntu" > ~/.tmux.conf.which
+echo "source ~/.bash_profile.ubuntu" > ~/.bash_profile.which
