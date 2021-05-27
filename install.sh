@@ -26,3 +26,5 @@ ln -s $(pwd)/vim/coc-settings.json ~/.vim/coc-settings.json
 echo "source ~/.vimrc.ubuntu" > ~/.vimrc.which
 echo "source-file ~/.tmux.conf.ubuntu" > ~/.tmux.conf.which
 echo "source ~/.bash_profile.ubuntu" > ~/.bash_profile.which
+
+./install.ubuntu.sh
