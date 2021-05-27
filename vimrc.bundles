@@ -64,3 +64,11 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'lifepillar/vim-solarized8'
 
 call plug#end()
+
+call coc#add_extension('coc-pyright')
+call coc#add_extension('coc-prettier')
+call coc#add_extension('coc-eslint')
+call coc#add_extension('coc-cssmodules')
+call coc#add_extension('coc-tsserver')
+call coc#add_extension('coc-elixir')
+call coc#add_extension('coc-css')
