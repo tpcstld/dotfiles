@@ -25,6 +25,7 @@ mkdir ~/.vim
 ln -s $(pwd)/vim/coc-settings.json ~/.vim/coc-settings.json
 mkdir ~/.config/nvim
 ln -s ~/.vimrc ~/.config/nvim/init.vim
+ln -s ~/.vim/coc-settings.json ~/.config/nvim/coc-settings.json
 touch ~/.vimrc.local.local
 touch ~/.bash_profile.local
 
