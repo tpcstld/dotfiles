@@ -26,6 +26,7 @@ ln -s $(pwd)/vim/coc-settings.json ~/.vim/coc-settings.json
 mkdir ~/.config/nvim
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 touch ~/.vimrc.local.local
+touch ~/.bash_profile.local
 
 echo "source ~/.vimrc.ubuntu" > ~/.vimrc.which
 echo "source-file ~/.tmux.conf.ubuntu" > ~/.tmux.conf.which
