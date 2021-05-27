@@ -12,6 +12,7 @@ nnoremap k gk
 
 set colorcolumn=80 " 80 character line
 
+let g:solarized_termtrans = 1
 " GUI settings
 set background=dark
 set t_Co=256
@@ -120,7 +121,9 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gR <Plug>(coc-rename)
 nmap <silent> gf :CocFix<CR>
+nmap <silent> gF :call CocAction('format')<CR>
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>

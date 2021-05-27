@@ -13,6 +13,7 @@ alias vim='nvim'
 
 # We want the SVN commit editor to be vim.
 export SVN_EDITOR=nvim
+export EDITOR=nvim
 
 # Disable auto-titling to preserve tmux window names.
 export DISABLE_AUTO_TITLE="true"

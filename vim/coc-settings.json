@@ -6,5 +6,11 @@
   "python.linting.mypyEnabled": true,
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.updateImportsOnFileMove.enabled": false,
-  "javascript.updateImportsOnFileMove.enabled": false
+  "javascript.updateImportsOnFileMove.enabled": false,
+  "elixir.pathToElixirLS": "~/projects/elixir-ls/release/language_server.sh",
+  "rust-client.enable": false,
+  "python.pythonPath": "/Users/jerry/projects/discord/env/bin/python",
+  "python.venvPath": "/Users/jerry/.virtualenvs",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/Users/jerry/projects/discord/tools/blackw"
 }
