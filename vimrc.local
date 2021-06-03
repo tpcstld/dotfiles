@@ -135,6 +135,10 @@ function! s:show_documentation()
   endif
 endfunction
 
+" Use OSC52
+autocmd TextYankPost * if v:event.operator is 'y' && v:event.regname is '' | OSCYankReg " | endif
+let g:oscyank_silent = v:true
+
 " coc Config =================================================================
 
 source ~/.vimrc.which

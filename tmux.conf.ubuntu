@@ -1,1 +1,2 @@
-bind -t vi-copy y copy-pipe 'xclip -in -selection clipboard'
+# bind -t vi-copy y copy-pipe 'xclip -in -selection clipboard'
+set -ag terminal-overrides ',*:cud1=\E[1B'

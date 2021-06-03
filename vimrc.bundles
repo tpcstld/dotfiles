@@ -62,6 +62,7 @@ Plug 'k0kubun/vim-open-github'
 Plug 'antoinemadec/coc-fzf'
 Plug 'elixir-editors/vim-elixir'
 Plug 'lifepillar/vim-solarized8'
+Plug 'ojroques/vim-oscyank'
 
 call plug#end()
 
