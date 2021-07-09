@@ -61,6 +61,7 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'lifepillar/vim-solarized8'
 Plug 'ojroques/vim-oscyank'
 Plug 'jsmulrow/vim-githublink'
+Plug 'terryma/vim-expand-region'
 
 call plug#end()
 
