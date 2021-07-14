@@ -1,5 +1,5 @@
 [core]
-  editor = 'vim'
+  editor = 'nvim'
   excludesfile = ~/.gitignore
 [user]
   email = jerry.jiang@discordapp.com
