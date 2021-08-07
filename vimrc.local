@@ -14,9 +14,10 @@ set colorcolumn=80 " 80 character line
 
 " GUI settings.
 let g:solarized_termtrans = 1
+set termguicolors
 set background=dark
 set t_Co=256
-colorscheme solarized
+colorscheme solarized8
 
 " Fix tabbing
 set tabstop=2
