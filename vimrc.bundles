@@ -58,10 +58,12 @@ Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'antoinemadec/coc-fzf'
 Plug 'elixir-editors/vim-elixir'
-Plug 'lifepillar/vim-solarized8'
+Plug 'ishan9299/nvim-solarized-lua',
 Plug 'ojroques/vim-oscyank'
 Plug 'jsmulrow/vim-githublink'
 Plug 'terryma/vim-expand-region'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'mhinz/vim-grepper'
 
 call plug#end()
 
@@ -72,3 +74,23 @@ call coc#add_extension('coc-cssmodules')
 call coc#add_extension('coc-tsserver')
 call coc#add_extension('coc-elixir')
 call coc#add_extension('coc-css')
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  ignore_install = { "javascript" }, -- List of parsers to ignore installing
+  highlight = {
+    enable = true,              -- false will disable the whole extension
+    disable = { },  -- list of language that will be disabled
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = false,
+  },
+}
+EOF
+
+" Grepper!
+let g:grepper = {}
+let g:grepper.tools = ['rg', 'ag', 'ack', 'ack-grep', 'grep', 'findstr', 'pt', 'sift', 'git']

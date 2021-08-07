@@ -53,7 +53,7 @@ let mapleader = ','
 " nmap <C-k> <C-w>k
 " nmap <C-l> <C-w>l
 map <leader>l :Align
-nmap <leader>a :Ag 
+nmap <leader>a :Grepper<CR>
 nmap <leader>d :NERDTreeToggle<CR>
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)

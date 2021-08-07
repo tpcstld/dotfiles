@@ -16,5 +16,6 @@
   graph = log --graph -20 --branches --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %cr) %Cred%d' --date-order
   precommit = diff --cached --diff-algorithm=minimal -w
   back = checkout @{-1}
+  preview = diff @{upstream}
 [url "\"git@github.com:\""]
 	insteadOf = \"https://github.com/\"
