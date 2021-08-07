@@ -58,11 +58,13 @@ Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'antoinemadec/coc-fzf'
 Plug 'elixir-editors/vim-elixir'
-Plug 'ishan9299/nvim-solarized-lua',
+" Plug 'lifepillar/vim-solarized8'
+" Plug 'ishan9299/nvim-solarized-lua'
 Plug 'ojroques/vim-oscyank'
 Plug 'jsmulrow/vim-githublink'
 Plug 'terryma/vim-expand-region'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/playground'
 Plug 'mhinz/vim-grepper'
 
 call plug#end()
