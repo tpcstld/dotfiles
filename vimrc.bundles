@@ -13,59 +13,60 @@ Plug 'austintaylor/vim-indentobject'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'gmarik/vundle'
 Plug 'juvenn/mustache.vim'
-Plug 'kchmck/vim-coffee-script'
 Plug 'leafgarland/typescript-vim'
 Plug 'majutsushi/tagbar'
-Plug 'rking/ag.vim'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'nono/vim-handlebars'
-Plug 'pangloss/vim-javascript'
-Plug 'scrooloose/syntastic'
-Plug 'slim-template/vim-slim'
-Plug 'tpope/vim-bundler'
+" Plug 'nathanaelkane/vim-indent-guides'
+" Plug 'tpope/vim-bundler'
+" Plug 'kchmck/vim-coffee-script'
+" Plug 'rking/ag.vim'
+" Plug 'nono/vim-handlebars'
+" Plug 'pangloss/vim-javascript'
+" Plug 'scrooloose/syntastic'
+" Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-cucumber'
+" Plug 'tpope/vim-cucumber'
+" Plug 'tpope/vim-pastie'
+" Plug 'tpope/vim-ragtag'
+" Plug 'tpope/vim-rails'
+" Plug 'vim-ruby/vim-ruby'
+" Plug 'vim-scripts/Align'
+" Plug 'vim-scripts/greplace.vim'
+" Plug 'vim-scripts/matchit.zip'
+" Plug 'derekwyatt/vim-scala'
+" Plug 'rhysd/vim-clang-format'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-pastie'
-Plug 'tpope/vim-ragtag'
-Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-vividchalk'
-Plug 'vim-ruby/vim-ruby'
-Plug 'vim-scripts/Align'
-Plug 'vim-scripts/greplace.vim'
-Plug 'vim-scripts/matchit.zip'
-Plug 'derekwyatt/vim-scala'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ervandew/supertab'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'rhysd/vim-clang-format'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'maxmellon/vim-jsx-pretty'
+" Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'maxmellon/vim-jsx-pretty'
 Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'antoinemadec/coc-fzf'
-Plug 'elixir-editors/vim-elixir'
+" Plug 'elixir-editors/vim-elixir'
 Plug 'lifepillar/vim-solarized8'
 " Plug 'ishan9299/nvim-solarized-lua'
 Plug 'ojroques/vim-oscyank'
 Plug 'jsmulrow/vim-githublink'
 Plug 'terryma/vim-expand-region'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-treesitter/playground'
+" Plug 'nvim-treesitter/playground'
 Plug 'mhinz/vim-grepper'
+Plug 'yssl/QFEnter'
+Plug 'github/copilot.vim'
 
 call plug#end()
 
@@ -76,11 +77,12 @@ call coc#add_extension('coc-cssmodules')
 call coc#add_extension('coc-tsserver')
 call coc#add_extension('coc-elixir')
 call coc#add_extension('coc-css')
+call coc#add_extension('coc-rust-analyzer')
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
-  ignore_install = { "javascript" }, -- List of parsers to ignore installing
+  ignore_install = { }, -- List of parsers to ignore installing
   highlight = {
     enable = true,              -- false will disable the whole extension
     disable = { },  -- list of language that will be disabled
@@ -96,3 +98,9 @@ EOF
 " Grepper!
 let g:grepper = {}
 let g:grepper.tools = ['rg', 'ag', 'ack', 'ack-grep', 'grep', 'findstr', 'pt', 'sift', 'git']
+
+" QFEnter
+let g:qfenter_keymap = {}
+let g:qfenter_keymap.open = ['<CR>', '<2-LeftMouse>']
+let g:qfenter_keymap.vopen = ['s']
+let g:qfenter_keymap.topen = ['t']

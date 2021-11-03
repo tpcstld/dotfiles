@@ -114,7 +114,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gR <Plug>(coc-rename)
-nmap <silent> gf :CocFix<CR>
+" nmap <silent> gf :CocFix<CR>
+nmap <silent> gf <Plug>(coc-codeaction-cursor)
 nmap <silent> gF :call CocAction('format')<CR>
 
 " Use K to show documentation in preview window
