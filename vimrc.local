@@ -117,6 +117,7 @@ nmap <silent> gR <Plug>(coc-rename)
 " nmap <silent> gf :CocFix<CR>
 nmap <silent> gf <Plug>(coc-codeaction-cursor)
 nmap <silent> gF :call CocAction('format')<CR>
+nmap <silent> gj <Plug>(coc-float-jump)
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
