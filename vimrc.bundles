@@ -103,4 +103,5 @@ let g:grepper.tools = ['rg', 'ag', 'ack', 'ack-grep', 'grep', 'findstr', 'pt', '
 let g:qfenter_keymap = {}
 let g:qfenter_keymap.open = ['<CR>', '<2-LeftMouse>']
 let g:qfenter_keymap.vopen = ['s']
+let g:qfenter_keymap.hopen = ['x']
 let g:qfenter_keymap.topen = ['t']
