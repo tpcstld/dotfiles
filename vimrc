@@ -1,8 +1,4 @@
-" Don't bother with vi compatibility
-set nocompatible
-
-" enable syntax highlighting
-syntax enable
+" ===================== General settings ============================
 
 " Install Plugins.
 if filereadable(expand("~/.vimrc.bundles"))
@@ -15,7 +11,12 @@ so ~/.vim/bundle/whitespace/whitespace.vim
 " ensure ftdetect et al work by including this after Vundle stuff
 filetype plugin indent on
 
-set autoindent
+set nocompatible                                             " Don't bother with vi compatibility
+syntax enable                                                " Enable syntax highlighting
+set nocursorline                                             " Don't highlight current line
+set ttyfast                                                  " More characters sent to terminal
+set colorcolumn=80                                           " 80 character line
+set autoindent                                               " Automatically indent
 set autoread                                                 " reload files when changed on disk, i.e. via `git checkout`
 set backspace=2                                              " Fix broken backspace in some setups
 set backupcopy=yes                                           " see :help crontab
@@ -39,6 +40,9 @@ set tabstop=4                                                " actual tabs occup
 set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
 set wildmenu                                                 " show a navigable menu for tab completion
 set wildmode=longest,list,full
+
+" Trigger autoread when switching buffers or gaining focus.
+autocmd FocusGained,BufEnter * silent! checktime
 
 " Enable basic mouse behavior such as resizing buffers.
 set mouse=a

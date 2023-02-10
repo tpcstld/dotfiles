@@ -1,16 +1,11 @@
 " vimrc not from maximum awesome, but not os specific
 " ===========================================================================
-" UI options
-set nocursorline " don't highlight current line
-set ttyfast " Fast terminal, more characters sent to terminal
 
 " Move vertically by visual line
 nnoremap j gj
 nnoremap k gk
 
 " set autochdir " Working directory is the same as file directory
-
-set colorcolumn=80 " 80 character line
 
 " GUI settings.
 let g:solarized_termtrans = 1
