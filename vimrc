@@ -62,10 +62,10 @@ nmap <leader>d :NERDTreeToggle<CR>
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>r :NERDTreeFind<CR>
-nmap <leader>t :GFiles<CR>
+nmap <leader>t :FzfLua git_files<CR>
+nmap <leader>b :FzfLua buffers<CR>
 nmap <leader>] :TagbarToggle<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
-nmap <leader>gd :YcmCompleter GoToDefinition<CR>
 nmap <leader>g :GitGutterToggle<CR>
 nmap <C-W>t :tabnew<CR>
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
