@@ -16,7 +16,7 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-commentary'
 " Plug 'ervandew/supertab'
-Plug 'tpope/vim-dispatch'
+" Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
@@ -41,7 +41,8 @@ Plug 'terryma/vim-expand-region'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'mhinz/vim-grepper'
 Plug 'yssl/QFEnter'
-" Plug 'github/copilot.vim'
+Plug 'github/copilot.vim'
+" Plug 'nvim-tree/nvim-tree.lua'
 
 call plug#end()
 
@@ -54,12 +55,18 @@ call coc#add_extension('coc-elixir')
 call coc#add_extension('coc-css')
 
 lua <<EOF
+local disable_function = function(lang)
+  local buf_name = vim.fn.expand("%")
+  if lang == 'javascript' and string.find(buf_name, "en%-US") then
+    return true
+  end
+end
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "python", "rust", "javascript", "typescript", "sql", "elixir", "kotlin", "java" }, 
   ignore_install = { }, -- List of parsers to ignore installing
   highlight = {
     enable = true,              -- false will disable the whole extension
-    disable = {  },  -- list of language that will be disabled
+    disable = disable_function,
     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
     -- Using this option may slow down your editor, and you may see some duplicate highlights.
@@ -82,3 +89,6 @@ let g:qfenter_keymap.open = ['<CR>', '<2-LeftMouse>']
 let g:qfenter_keymap.vopen = ['s']
 let g:qfenter_keymap.hopen = ['x']
 let g:qfenter_keymap.topen = ['t']
+
+" auto-pairs
+let g:AutoPairsMultilineClose = 0

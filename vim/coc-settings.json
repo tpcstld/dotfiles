@@ -2,13 +2,20 @@
   "suggest.noselect": true,
   "eslint.autoFixOnSave": false,
   "eslint.quiet": false,
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "typescriptreact"],
+  "eslint.options": {
+    "overrideConfig": {
+      "rules": {
+        "@typescript-eslint/strict-boolean-expressions": "off"
+      }
+    }
+  },
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "typescriptreact", "rust"],
   "css.validate": false,
   "python.linting.mypyEnabled": true,
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.updateImportsOnFileMove.enabled": false,
   "javascript.updateImportsOnFileMove.enabled": false,
-  "elixir.pathToElixirLS": "~/projects/elixir-ls/release/language_server.sh",
+  "tsserver.useLocalTsdk": true,
   "rust-client.enable": false,
   "python.pythonPath": "/usr/bin/python3",
   "python.venvPath": "/home/discord/.virtualenvs",
