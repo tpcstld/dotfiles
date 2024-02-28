@@ -10,8 +10,9 @@
   "javascript.updateImportsOnFileMove.enabled": false,
   "elixir.pathToElixirLS": "~/projects/elixir-ls/release/language_server.sh",
   "rust-client.enable": false,
-  "python.pythonPath": "/Users/jerry/projects/discord/env/bin/python",
-  "python.venvPath": "/Users/jerry/.virtualenvs",
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "/Users/jerry/projects/discord/tools/blackw"
+  "python.pythonPath": "/usr/bin/python3",
+  "python.venvPath": "/home/discord/.virtualenvs",
+  "python.formatting.provider": "ruff",
+  "python.linting.ruffEnabled": true,
+  "pyright.organizeimports.provider": "ruff"
 }

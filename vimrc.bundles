@@ -52,7 +52,6 @@ call coc#add_extension('coc-cssmodules')
 call coc#add_extension('coc-tsserver')
 call coc#add_extension('coc-elixir')
 call coc#add_extension('coc-css')
-" call coc#add_extension('coc-rust-analyzer')
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
