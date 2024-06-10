@@ -42,6 +42,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'mhinz/vim-grepper'
 Plug 'yssl/QFEnter'
 Plug 'github/copilot.vim'
+Plug 'tris203/precognition.nvim'
 " Plug 'nvim-tree/nvim-tree.lua'
 
 call plug#end()
@@ -77,6 +78,9 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
   }
 }
+
+require("precognition").toggle()
+
 EOF
 
 " Grepper!
