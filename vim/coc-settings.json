@@ -21,5 +21,6 @@
   "python.venvPath": "/home/discord/.virtualenvs",
   "python.formatting.provider": "ruff",
   "python.linting.ruffEnabled": true,
-  "pyright.organizeimports.provider": "ruff"
+  "pyright.organizeimports.provider": "ruff",
+  "tsserver.maxTsServerMemory": 8192
 }
