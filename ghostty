@@ -1,0 +1,13 @@
+# Colors - Solarized Dark
+theme = Solarized Dark Higher Contrast
+
+# Fonts
+font-family=Monaco for Powerline
+font-size=12
+font-thicken=true
+
+# Matches Alacritty.
+adjust-cell-width=-1
+
+# Misc
+link-url=true
