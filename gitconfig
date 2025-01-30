@@ -1,6 +1,9 @@
 [core]
   editor = 'nvim'
   excludesfile = ~/.gitignore
+	preloadIndex = true
+	untrackedCache = true
+	fsmonitor = true
 [user]
   email = jerry.jiang@discordapp.com
   name = Jerry Jiang
