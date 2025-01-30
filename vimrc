@@ -62,7 +62,7 @@ nmap <leader>d :NERDTreeToggle<CR>
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>r :NERDTreeFind<CR>
-nmap <leader>t :FzfLua git_files<CR>
+nmap <leader>t :FzfLua git_files git_icons=false<CR>
 nmap <leader>b :FzfLua buffers<CR>
 nmap <leader>] :TagbarToggle<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>

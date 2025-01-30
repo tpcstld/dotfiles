@@ -79,9 +79,8 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 
-require("precognition").toggle()
-
 EOF
+" require("precognition").toggle()
 
 " Grepper!
 let g:grepper = {}
