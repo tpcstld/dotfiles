@@ -18,7 +18,7 @@
   "tsserver.useLocalTsdk": true,
   "rust-client.enable": false,
   "python.pythonPath": "/usr/bin/python3",
-  "python.venvPath": "/home/discord/.virtualenvs",
+  "python.venvPath": "/Users/jerry.jiang/.virtualenvs",
   "python.formatting.provider": "ruff",
   "python.linting.ruffEnabled": true,
   "pyright.organizeimports.provider": "ruff",
