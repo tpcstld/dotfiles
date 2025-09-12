@@ -9,3 +9,4 @@ vim.opt.listchars:append({
   trail = "▫",
 })
 vim.opt.relativenumber = false
+vim.opt.cursorlineopt = "number"

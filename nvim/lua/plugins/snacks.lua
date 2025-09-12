@@ -3,6 +3,7 @@ return {
   opts = {
     scroll = { enabled = false },
     terminal = { enabled = false },
+    indent = { enabled = false },
     picker = {
       sources = {
         explorer = {
