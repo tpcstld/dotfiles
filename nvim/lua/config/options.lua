@@ -8,3 +8,4 @@ vim.opt.listchars:append({
   tab = "▸\\",
   trail = "▫",
 })
+vim.opt.relativenumber = false
