@@ -5,7 +5,7 @@
 vim.g.mapleader = ","
 vim.g.lazyvim_picker = "fzf"
 vim.opt.listchars:append({
-  tab = "▸\\",
+  tab = "▸ ",
   trail = "▫",
 })
 vim.opt.relativenumber = false
