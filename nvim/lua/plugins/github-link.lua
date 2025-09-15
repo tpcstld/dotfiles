@@ -1,0 +1,3 @@
+return {
+  "jsmulrow/vim-githublink",
+}

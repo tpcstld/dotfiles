@@ -1,6 +1,5 @@
 {
   "suggest.noselect": true,
-  "eslint.autoFixOnSave": false,
   "eslint.quiet": false,
   "eslint.options": {
     "overrideConfig": {
@@ -22,5 +21,8 @@
   "python.formatting.provider": "ruff",
   "python.linting.ruffEnabled": true,
   "pyright.organizeimports.provider": "ruff",
-  "tsserver.maxTsServerMemory": 8192
+  "tsserver.maxTsServerMemory": 8192,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
