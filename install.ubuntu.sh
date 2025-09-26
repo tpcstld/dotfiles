@@ -14,3 +14,5 @@ sudo apt-get install ripgrep --yes
 
 sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin --yes
 sudo apt-get upgrade tmux --yes
+
+cargo install --locked tree-sitter-cli --force
