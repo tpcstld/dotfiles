@@ -11,3 +11,5 @@ vim.opt.listchars:append({
 vim.opt.relativenumber = false
 vim.opt.cursorlineopt = "number"
 vim.opt.colorcolumn = "80"
+
+vim.opt.clipboard = "unnamedplus"
