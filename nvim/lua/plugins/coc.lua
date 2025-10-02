@@ -106,6 +106,7 @@ M.config = function()
   vim.fn["coc#add_extension"]("coc-cssmodules")
   vim.fn["coc#add_extension"]("coc-tsserver")
   vim.fn["coc#add_extension"]("coc-css")
+  vim.fn["coc#add_extension"]("coc-sql")
 end
 
 return M
