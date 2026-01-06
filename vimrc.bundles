@@ -15,8 +15,6 @@ Plug 'majutsushi/tagbar'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-commentary'
-" Plug 'ervandew/supertab'
-" Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
@@ -34,7 +32,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'antoinemadec/coc-fzf'
-Plug 'lifepillar/vim-solarized8'
+Plug 'lifepillar/vim-solarized8', {'branch': 'neovim'}
 Plug 'ojroques/vim-oscyank'
 Plug 'jsmulrow/vim-githublink'
 Plug 'terryma/vim-expand-region'
@@ -43,7 +41,6 @@ Plug 'mhinz/vim-grepper'
 Plug 'yssl/QFEnter'
 Plug 'github/copilot.vim'
 Plug 'tris203/precognition.nvim'
-" Plug 'nvim-tree/nvim-tree.lua'
 
 call plug#end()
 
@@ -54,6 +51,7 @@ call coc#add_extension('coc-cssmodules')
 call coc#add_extension('coc-tsserver')
 call coc#add_extension('coc-elixir')
 call coc#add_extension('coc-css')
+call coc#add_extension('coc-sourcekit')
 
 lua <<EOF
 local disable_function = function(lang)
@@ -80,7 +78,6 @@ require'nvim-treesitter.configs'.setup {
 }
 
 EOF
-" require("precognition").toggle()
 
 " Grepper!
 let g:grepper = {}

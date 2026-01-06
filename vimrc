@@ -68,6 +68,10 @@ nmap <leader>] :TagbarToggle<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
 nmap <leader>g :GitGutterToggle<CR>
 nmap <C-W>t :tabnew<CR>
+" nmap <leader>aa :AvanteAsk<CR>
+" nmap <leader>ae :AvanteEdit<CR>
+" vmap <leader>aa :<C-U>AvanteAsk<CR>
+" vmap <leader>ae :<C-U>AvanteEdit<CR>
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
 " plugin settings
