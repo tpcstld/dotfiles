@@ -4,24 +4,24 @@ return {
     scroll = { enabled = false },
     terminal = { enabled = false },
     indent = { enabled = false },
-    picker = {
-      sources = {
-        explorer = {
-          win = {
-            input = {
-              keys = {
-                ["<esc>"] = { "", mode = "n" },
-              },
-            },
-            list = {
-              keys = {
-                ["<esc>"] = { "", mode = "n" },
-              },
-            },
-          },
-        },
-      },
-    },
+    picker = { enabled = false },
+    --     sources = {
+    --       explorer = {
+    --         win = {
+    --           input = {
+    --             keys = {
+    --               ["<esc>"] = { "", mode = "n" },
+    --             },
+    --           },
+    --           list = {
+    --             keys = {
+    --               ["<esc>"] = { "", mode = "n" },
+    --             },
+    --           },
+    --         },
+    --       },
+    --     },
+    --   },
   },
   keys = {
     {
