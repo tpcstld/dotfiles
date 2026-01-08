@@ -24,19 +24,19 @@ return {
     --   },
   },
   keys = {
-    {
-      "<leader>r",
-      function()
-        Snacks.explorer()
-      end,
-      desc = "File Tree (cwd)",
-    },
-    {
-      "<leader>d",
-      function()
-        Snacks.explorer({ cwd = LazyVim.root() })
-      end,
-      desc = "File Tree (root)",
-    },
+    -- {
+    --   "<leader>r",
+    --   function()
+    --     Snacks.explorer()
+    --   end,
+    --   desc = "File Tree (cwd)",
+    -- },
+    -- {
+    --   "<leader>d",
+    --   function()
+    --     Snacks.explorer({ cwd = LazyVim.root() })
+    --   end,
+    --   desc = "File Tree (root)",
+    -- },
   },
 }
