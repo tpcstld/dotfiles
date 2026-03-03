@@ -12,6 +12,7 @@ return {
       refresh = "<leader>vr",
       focus = "<leader>vf",
       stop = "<leader>vS",
+      history = "<leader>vh",
       toggle = {
         default = "<leader>vt",
         debug = "<leader>vd",
