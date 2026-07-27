@@ -23,12 +23,7 @@ ln -s $(pwd)/tern-project ~/.tern-project
 ln -s $(pwd)/ycm_extra_conf.py ~/.ycm_extra_conf.py
 ln -s $(pwd)/agignore ~/.agignore
 ln -s $(pwd)/agignore ~/.rgignore
-mkdir ~/.vim
-cp -r $(pwd)/vim/bundle/ ~/.vim/bundle
-ln -s $(pwd)/vim/coc-settings.json ~/.vim/coc-settings.json
-mkdir -p ~/.config/nvim
-ln -s ~/.vimrc ~/.config/nvim/init.vim
-ln -s ~/.vim/coc-settings.json ~/.config/nvim/coc-settings.json
+ln -s $(pwd)/nvim ~/.config/nvim
 mkdir -p ~/.config/ghostty
 ln -s $(pwd)/ghostty ~/.config/ghostty/config
 touch ~/.vimrc.local.local
